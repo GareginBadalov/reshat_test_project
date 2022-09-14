@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  app:
+    entrypoint: /entrypoint.sh
+    build:
+
+      context: .
+    ports:
+      - "8000:8000"
+    environment:
+       - STRIPE_PUBLISHABLE_KEY=pk_test_51LhZkNG0PTn54pjymDT2YwXpfa1k6aT6yoaaFj8MOFiMszXatmBGYVP6twQIcCeyI5pTBWBHX0DpUxnHMQL6IFbL00KTnQGXLI
+       - STRIPE_SECRET_KEY=sk_test_51LhZkNG0PTn54pjymvq4hfLemxyBK77RJz0Lkhso1A1Gp0mykLfi0QTqQxs1r7R1LoLRxrelrHScs8hBmuF2n21700q7XzaPqP
